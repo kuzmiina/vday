@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: mistyrose;
+}
+.wrapper{
+    margin: 50px auto;
+    width: 320px;
+    background-color: gold;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    font-family: 'Arial';
+    border-top-left-radius: 45px;
+    border: 2px solid black;
+}
+#check-menu{
+    display: none;
+}
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 40px;
+    line-height: 40px;
+}
+.burger-line{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    height: 2px;
+    width: 30px;
+    background: #fff;
+    transition: .5s all;
+}
+.second, .third{
+    top: 18px;
+}
+.fourth{
+    top: 28px;
+}
+.menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+.menu a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid palegoldenrod;
+    background-color: gold;
+}
+.menu a:hover{
+    background-color: palegoldenrod;
+}
+#check-menu:checked ~ .menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+#check-menu:checked ~ .first{
+    display: none;
+}
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive;
+    margin: 7%;
+    border-bottom: 3px solid black;
+    margin-top: 10%;
+}
+.icon1{
+    display: inline-block;
+    background-color: 
+}
+.icon2{
+    display: inline-block;
+}
+.icons-top{
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    margin-left: 20%
+}
+.icon3{
+    display: inline-block;
+}
+.icon4{
+    display: inline-block;
+}
+.icons-middle{
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    margin-left: 20%;
+}
+.icon5{
+    display: inline-block;
+}
+.icon6{
+    display: inline-block;
+}
+.icons-under{
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    margin-left: 20%
+}
+.icon1 i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon2 i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon3 i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon4 i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon5 i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon6 i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon1 p{
+    width: 80%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon2 p{
+    width: 80%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon3 p{
+    width: 82%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon4 p{
+    width: 80%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon5 p{
+    width: 80%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon6 p{
+    width: 80%;
+    font-family: 'Slabo 27px', serif;
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Kaushan Script', cursive;
+    margin: 5%;
+    border-bottom: 3px solid black;
+}
+.photo1 img{
+    height: 350px;
+    width: 270px;
+    margin: 5%;
+    display: block;
+    border: 2px solid black;
+}
+.photo2 img{
+    display: block;
+    height: 350px;
+    width: 270px;
+    margin: 5%;
+    border: 2px solid black;
+}
+.photo3 img{
+    display: block;
+    height: 350px;
+    width: 270px;
+    margin: 5%;
+    border: 2px solid black;
+}
+.photo1{
+    display: flex;
+    justify-content: center;
+}
+.photo2{
+    display: flex;
+    justify-content: center;
+}
+.photo3{
+    display: flex;
+    justify-content: center;
+}
+.notes{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.notes1{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.notes2{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20%;
+}
+.heart1{
+    margin-right: 5%;
+    border-radius: 45px;
+    border: 10px solid azure;
+    background-color: azure;
+}
+.heart2{
+    margin-left: 5%;
+    border-radius: 45px;
+    border: 10px solid azure;
+    background-color: azure;
+}
+.green1:hover,
+.green1:active,
+.green1:focus{
+    background-color: lawngreen;
+    border: 10px solid lawngreen;
+    cursor: pointer;
+}
+.green2:hover,
+.green2:active,
+.green2:focus{
+    background-color: lawngreen;
+    border: 10px solid lawngreen;
+    cursor: pointer;
+}
+.green3:hover,
+.green3:active,
+.green3:focus{
+    background-color: lawngreen;
+    border: 10px solid lawngreen;
+    cursor: pointer;
+}
+.red1:hover,
+.red1:active,
+.red1:focus{
+    background-color: red;
+    border: 10px solid red;
+    cursor: pointer;
+}
+.red2:hover,
+.red2:active,
+.red2:focus{
+    background-color: red;
+    border: 10px solid red;
+    cursor: pointer;
+}
+.red3:hover,
+.red3:active,
+.red3:focus{
+    background-color: red;
+    border: 10px solid red;
+    cursor: pointer;
+}
+.mobile{
+    display: none;
+}
+.logo i{
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 10px;;
+}
+.logo p{
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+.nav-menu{
+    display: inline-block;
+    border-radius: 45px;
+    border: 2px solid black;
+    background-color: gold;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    margin: 5px;
+}
+.nav-menu a:hover,
+.nav-menu a:active,
+.nav-menu a:focus{
+    color: black;
+}
+.icon1a{
+    display: inline-block;
+}
+.icon2a{
+    display: inline-block;
+}
+.icon3a{
+    display: inline-block;
+}
+.icons-top1{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.icon1a p{
+    width: 60%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon2a p{
+    width: 60%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon3a p{
+    width: 60%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon1a i{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon2a i{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon3a i{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icons-under1{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.icon4a p{
+    width: 60%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon5a p{
+    width: 60%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon6a p{
+    width: 60%;
+    font-family: 'Slabo 27px', serif;
+}
+.icon4a i{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon5a i{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.icon6a i{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border-radius: 45px;
+    background-color: azure;
+    border: 10px solid azure;
+}
+.photo1a img{
+    width: 270px;
+    height: 350px;
+    display: inline-block;
+    border: 2px solid black;
+}
+.photo2a img{
+    width: 250px;
+    height: 350px;
+    display: inline-block;
+    border: 2px solid black;
+}
+.photo3a img{
+    width: 270px;
+    height: 350px;
+    display: inline-block;
+    border: 2px solid black;
+}
+.photos{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+.photos i{
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.green1a:hover,
+.green1a:active,
+.green1a:focus{
+    background-color: lawngreen;
+    border: 10px solid lawngreen;
+    cursor: pointer;
+}
+.green2a:hover,
+.green2a:active,
+.green2a:focus{
+    background-color: lawngreen;
+    border: 10px solid lawngreen;
+    cursor: pointer;
+}
+.green3a:hover,
+.green3a:active,
+.green3a:focus{
+    background-color: lawngreen;
+    border: 10px solid lawngreen;
+    cursor: pointer;
+}
+.red1a:hover,
+.red1a:active,
+.red1a:focus{
+    background-color: red;
+    border: 10px solid red;
+    cursor: pointer;
+}
+.red2a:hover,
+.red2a:active,
+.red2a:focus{
+    background-color: red;
+    border: 10px solid red;
+    cursor: pointer;
+}
+.red3a:hover,
+.red3a:active,
+.red3a:focus{
+    background-color: red;
+    border: 10px solid red;
+    cursor: pointer;
+}
+@media (max-width: 900px){
+    .mobile{
+        display: block;
+    }
+    .big{
+        display: none;
+    }
+    .text{
+        margin-top: 25%
+    }
+}
